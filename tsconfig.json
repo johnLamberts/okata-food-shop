@@ -22,9 +22,9 @@
 
     "baseUrl": ".",
     "paths": {
-      "@/layouts": ["./src/layouts/*"],
-      "@/components": ["./src/components/*"],
-      "@/lib": ["./src/lib/*"]
+      "@/layouts/*": ["./src/layouts/*"],
+      "@/components/*": ["./src/components/*"],
+      "@/lib/*": ["./src/lib/*"]
     }
   },
   "include": ["./src"],
