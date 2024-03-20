@@ -22,9 +22,16 @@
 
     "baseUrl": ".",
     "paths": {
+      // Routes
+      "@/routes/*": ["./src/routes/*"],
+
       "@/layouts/*": ["./src/layouts/*"],
       "@/components/*": ["./src/components/*"],
-      "@/lib/*": ["./src/lib/*"]
+      "@/lib/*": ["./src/lib/*"],
+
+      // Pages Module
+      "@/modules/error-pages/*": ["./src/modules/error-pages/*"],
+      "@/modules/admin-dashboard/*": ["./src/modules/admin-dashboard/*"]
     }
   },
   "include": ["./src"],
