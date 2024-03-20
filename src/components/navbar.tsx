@@ -104,12 +104,12 @@ const NavLink = ({
           size: "sm",
         }),
         "h-12 justify-start text-wrap rounded-none px-6",
-        subLink && "h-10 w-full border-l border-l-slate-500 px-2"
+        subLink && "h-10 w-full border-l border-l-slate-500 px-2 "
       )}
       aria-current={checkActiveNav(href) ? "page" : undefined}
     >
       <div className="mr-2">{icon}</div>
-      {title}
+      <span className="text-[0.625rem]">{title}</span>
       {label && (
         <div className="ml-2 rounded-lg bg-primary px-1 text-[0.625rem] text-primary-foreground">
           {label}
@@ -141,7 +141,7 @@ function NavLinkDropdown({
         )}
       >
         <div className="mr-2">{icon}</div>
-        {title}
+        <span className="text-[0.625rem]">{title}</span>
         {label && (
           <div className="ml-2 rounded-lg bg-primary px-1 text-[0.625rem] text-primary-foreground">
             {label}

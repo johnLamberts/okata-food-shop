@@ -1,11 +1,9 @@
 import { cn } from "@/lib/cn";
-import { CrossIcon } from "lucide-react";
 import { useEffect, useState } from "react";
 import { LayoutHeader, Layout } from "./custom/layouts";
 import { Button } from "./ui/button";
 import {
   BackpackIcon,
-  CaretLeftIcon,
   Cross1Icon,
   DashboardIcon,
   DoubleArrowLeftIcon,
@@ -168,39 +166,11 @@ const Sidebar = ({ className, isCollapsed, setIsCollapsed }: SidebarProps) => {
         <Layout>
           {/* Header */}
           <LayoutHeader className="sticky top-0 justify-between px-4 py-3 shadow md:px-4">
-            <div className={`flex items-center ${!isCollapsed ? "gap-2" : ""}`}>
-              {/* <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 256 256"
-                className={`transition-all ${
-                  isCollapsed ? "h-6 w-6" : "h-8 w-8"
-                }`}
-              >
-                <rect width="256" height="256" fill="none"></rect>
-                <line
-                  x1="208"
-                  y1="128"
-                  x2="128"
-                  y2="208"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="16"
-                ></line>
-                <line
-                  x1="192"
-                  y1="40"
-                  x2="40"
-                  y2="192"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="16"
-                ></line>
-                <span className="sr-only">Code-Okata Shop</span>
-              </svg> */}
+            <div
+              className={`flex items-center mx-auto gap-x-5 ${
+                !isCollapsed ? "gap-2" : ""
+              }`}
+            >
               <svg
                 id="logo-16"
                 className={`transition-all ${
