@@ -6,10 +6,12 @@ import { Button } from "./ui/button";
 import {
   BackpackIcon,
   CaretLeftIcon,
+  Cross1Icon,
   DashboardIcon,
   DoubleArrowLeftIcon,
   FileTextIcon,
   GearIcon,
+  HamburgerMenuIcon,
   IdCardIcon,
   PersonIcon,
   RotateCounterClockwiseIcon,
@@ -43,25 +45,19 @@ export const sidelinks: SideLink[] = [
     icon: <IdCardIcon height={18} />,
     sub: [
       {
-        title: "Sign In (email + password)",
+        title: "Place order",
         label: "",
         href: "/sign-in",
         icon: <DashboardIcon height={18} />,
       },
       {
-        title: "Sign In (Box)",
+        title: "Point of Sale",
         label: "",
         href: "/sign-in-2",
         icon: <DashboardIcon height={18} />,
       },
       {
-        title: "Sign Up",
-        label: "",
-        href: "/sign-up",
-        icon: <DashboardIcon height={18} />,
-      },
-      {
-        title: "Forgot Password",
+        title: "Transaction List",
         label: "",
         href: "/forgot-password",
         icon: <DashboardIcon height={18} />,
@@ -250,7 +246,7 @@ const Sidebar = ({ className, isCollapsed, setIsCollapsed }: SidebarProps) => {
               aria-expanded={navOpened}
               onClick={() => setNavOpened((prev) => !prev)}
             >
-              {navOpened ? <CrossIcon /> : <DoubleArrowLeftIcon />}
+              {navOpened ? <Cross1Icon /> : <HamburgerMenuIcon />}
             </Button>
           </LayoutHeader>
 
@@ -272,11 +268,10 @@ const Sidebar = ({ className, isCollapsed, setIsCollapsed }: SidebarProps) => {
             onClick={() => setIsCollapsed?.((prev) => !prev)}
             size="icon"
             variant="outline"
-            className="absolute -right-5 top-1/2 hidden rounded-full md:inline-flex"
+            className="absolute -right-6 top-2/3 hidden rounded-full md:inline-flex"
           >
-            <CaretLeftIcon
-              stroke={"1.5"}
-              className={`h-5 w-5 ${isCollapsed ? "rotate-180" : ""}`}
+            <DoubleArrowLeftIcon
+              className={`h-3 w-3 ${isCollapsed ? "rotate-180" : ""}`}
             />
           </Button>
         </Layout>
