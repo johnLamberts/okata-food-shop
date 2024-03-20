@@ -4,7 +4,7 @@ import { createBrowserRouter } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
-    path: "/admin-dashboard",
+    path: "/",
     lazy: async () => {
       const AppShell = await import("@/layouts/admin-layout");
       return { Component: AppShell.default };
@@ -15,6 +15,20 @@ const router = createBrowserRouter([
         index: true,
         lazy: async () => ({
           Component: (await import("@/modules/admin-dashboard/admin-dashboard"))
+            .default,
+        }),
+      },
+      {
+        path: "admin-dashboard",
+        lazy: async () => ({
+          Component: (await import("@/modules/admin-dashboard/admin-dashboard"))
+            .default,
+        }),
+      },
+      {
+        path: "products",
+        lazy: async () => ({
+          Component: (await import("@/modules/product-management/products"))
             .default,
         }),
       },

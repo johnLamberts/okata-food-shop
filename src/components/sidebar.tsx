@@ -26,8 +26,8 @@ export const sidelinks: SideLink[] = [
   },
   {
     title: "Product Management",
-    label: "3",
-    href: "/product-mgm",
+    // label: "3",
+    href: "/products",
     icon: <BackpackIcon height={18} />,
   },
   {

@@ -31,8 +31,7 @@
       "@/lib/*": ["./src/lib/*"],
 
       // Pages Module
-      "@/modules/error-pages/*": ["./src/modules/error-pages/*"],
-      "@/modules/admin-dashboard/*": ["./src/modules/admin-dashboard/*"]
+      "@/modules/*": ["./src/modules/*"]
     }
   },
   "include": ["./src"],

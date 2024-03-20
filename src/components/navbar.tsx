@@ -94,6 +94,7 @@ const NavLink = ({
   closeNav,
 }: NavbarLinkProps) => {
   const { checkActiveNav } = useCheckActiveNav();
+
   return (
     <Link
       to={href}
