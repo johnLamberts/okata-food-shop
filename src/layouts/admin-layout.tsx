@@ -11,7 +11,7 @@ const AdminLayout = () => {
         <div
           id="content"
           className={`overflow-x-hidden pt-16 transition-[margin] md:overflow-y-hidden md:pt-0 ${
-            isCollapsed ? "md:ml-14" : "md:ml-64"
+            isCollapsed ? "md:ml-14" : "md:ml-72"
           } h-full`}
         >
           <Outlet />

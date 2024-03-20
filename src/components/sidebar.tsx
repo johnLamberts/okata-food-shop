@@ -39,6 +39,12 @@ export const sidelinks: SideLink[] = [
     icon: <PersonIcon height={18} />,
   },
   {
+    title: "Customer Management",
+    label: "9",
+    href: "/customer-mgm",
+    icon: <PersonIcon height={18} />,
+  },
+  {
     title: "Transaction",
     label: "",
     href: "/transaction",
@@ -146,7 +152,7 @@ const Sidebar = ({ className, isCollapsed, setIsCollapsed }: SidebarProps) => {
       <aside
         className={cn(
           `fixed left-0 right-0 top-0 z-50 w-full border-r-2 border-r-muted transition-[width] md:bottom-0 md:right-auto md:h-svh ${
-            isCollapsed ? "md:w-14" : "md:w-64"
+            isCollapsed ? "md:w-14" : "md:w-72"
           }`,
           className
         )}
@@ -268,7 +274,11 @@ const Sidebar = ({ className, isCollapsed, setIsCollapsed }: SidebarProps) => {
             onClick={() => setIsCollapsed?.((prev) => !prev)}
             size="icon"
             variant="outline"
-            className="absolute -right-6 top-2/3 hidden rounded-full md:inline-flex"
+            className="absolute -right-5 top-1/2 hidden rounded-full md:inline-flex"
+            style={{
+              height: "2rem",
+              width: "2rem",
+            }}
           >
             <DoubleArrowLeftIcon
               className={`h-3 w-3 ${isCollapsed ? "rotate-180" : ""}`}
