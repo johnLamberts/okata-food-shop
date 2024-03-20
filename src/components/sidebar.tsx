@@ -166,11 +166,7 @@ const Sidebar = ({ className, isCollapsed, setIsCollapsed }: SidebarProps) => {
         <Layout>
           {/* Header */}
           <LayoutHeader className="sticky top-0 justify-between px-4 py-3 shadow md:px-4">
-            <div
-              className={`flex items-center mx-auto gap-x-5 ${
-                !isCollapsed ? "gap-2" : ""
-              }`}
-            >
+            <div className={`flex items-center ${!isCollapsed ? "gap-2" : ""}`}>
               <svg
                 id="logo-16"
                 className={`transition-all ${

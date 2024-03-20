@@ -5,7 +5,7 @@ const Products = () => {
   return (
     <Layout>
       <LayoutHeader>
-        <UserHeader />
+        <UserHeader headerName="Product" />
       </LayoutHeader>
 
       <LayoutBody>product management list</LayoutBody>
