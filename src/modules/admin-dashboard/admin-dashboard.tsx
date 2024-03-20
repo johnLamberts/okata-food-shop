@@ -1,7 +1,5 @@
 import { Layout, LayoutBody, LayoutHeader } from "@/components/custom/layouts";
-import ModeToggle from "@/components/mode-toggle";
-import TopNav from "@/components/top-nav";
-import UserNav from "@/components/user-nav";
+
 import {
   Card,
   CardContent,
@@ -9,38 +7,13 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import UserHeader from "@/components/user-header";
 
-const topNav = [
-  {
-    title: "Overview",
-    href: "dashboard/overview",
-    isActive: true,
-  },
-  {
-    title: "Customers",
-    href: "dashboard/customers",
-    isActive: false,
-  },
-  {
-    title: "Products",
-    href: "dashboard/products",
-    isActive: false,
-  },
-  {
-    title: "Settings",
-    href: "dashboard/settings",
-    isActive: false,
-  },
-];
 const AdminDashboard = () => {
   return (
     <Layout>
       <LayoutHeader>
-        <TopNav links={topNav} />
-        <div className="ml-auto flex items-center space-x-2">
-          <ModeToggle />
-          <UserNav />
-        </div>
+        <UserHeader />
       </LayoutHeader>
 
       <LayoutBody className="space-y-4">
