@@ -20,6 +20,7 @@ const router = createBrowserRouter([
       },
     ],
   },
+  { path: "/500", Component: GeneralError },
   { path: "*", Component: NotFoundError },
 ]);
 
