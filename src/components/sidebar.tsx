@@ -203,8 +203,10 @@ const Sidebar = ({ className, isCollapsed, setIsCollapsed }: SidebarProps) => {
                   isCollapsed ? "invisible w-0" : "visible w-auto"
                 }`}
               >
-                <span className="font-medium">Code-Okata</span>
-                <span className="text-xs">Food Shop</span>
+                <span className="font-medium uppercase font-extrabold">
+                  KapeJuan
+                </span>
+                <span className="text-xs italic">Coffee Shop</span>
               </div>
             </div>
 
