@@ -6,11 +6,11 @@ const AdminLayout = () => {
   const [isCollapsed, setIsCollapsed] = useIsCollaped();
   return (
     <>
-      <div className="relative h-full overflow-hidden bg-background">
+      <div className="relative h-full  bg-background">
         <Sidebar isCollapsed={isCollapsed} setIsCollapsed={setIsCollapsed} />{" "}
         <div
           id="content"
-          className={`overflow-x-hidden pt-16 transition-[margin] md:overflow-y-hidden md:pt-0 ${
+          className={`pt-16 transition-[margin] md:overflow-y-hidden md:pt-0 ${
             isCollapsed ? "md:ml-14" : "md:ml-72"
           } h-full`}
         >
