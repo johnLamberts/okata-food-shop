@@ -1,14 +1,18 @@
 import { Layout, LayoutBody, LayoutHeader } from "@/components/custom/layouts";
+import { Separator } from "@/components/ui/separator";
 import UserHeader from "@/components/user-header";
+import ProductTable from "./features/product-table";
 
 const Products = () => {
   return (
     <Layout>
       <LayoutHeader>
-        <UserHeader headerName="Product" />
+        <UserHeader headerName="Manage Product" />
       </LayoutHeader>
-
-      <LayoutBody>product management list</LayoutBody>
+      <Separator />
+      <LayoutBody>
+        <ProductTable />
+      </LayoutBody>
     </Layout>
   );
 };
