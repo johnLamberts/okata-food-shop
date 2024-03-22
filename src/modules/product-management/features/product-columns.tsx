@@ -120,7 +120,7 @@ const useProductColumn = () => {
       },
       {
         id: "actions",
-        cell: ({ row }) => <DataTableRowActions row={row} />,
+        cell: () => <DataTableRowActions />,
       },
     ],
     []
